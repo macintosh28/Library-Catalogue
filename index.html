@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/libraryicon.png">
+    <title>Library</title>
+</head>
+
+<body>
+    <div class="library-container">
+        <!-- Header with Library Title and Search Bar -->
+        <div class="library-header">
+            <h1>LIBRARY</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by title or category">
+                <button id="searchBTN">Search</button>
+            </div>
+        </div>
+
+        <!-- Book List Container -->
+        <div class="book-list"></div>
+
+        <!-- Add Book Popup Form -->
+        <div class="book-popup">
+            <form id="add-book-form">
+                <input type="text" id="codeInput" placeholder="Book Code" required>
+                <input type="text" id="titleInput" placeholder="Title" required>
+                <input type="text" id="authorInput" placeholder="Author" required>
+                <input type="text" id="locationInput" placeholder="Location" required>
+                <input type="text" id="categoryInput" placeholder="Category" required>
+                <button type="submit" id="book-submitBTN">Add</button>
+            </form>
+        </div>
+
+        <!-- Add Book Button -->
+        <div class="add-book-btn">
+            <button class="content-addBTN">+ Add Book</button>
+        </div>
+    </div>
+    <script defer src="app.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1F6F9;
+    margin: 0;
+}
+
+.library-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and Search Bar Styling */
+.library-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212A3E;
+    color: #FFFFFF;
+    box-shadow: 0 2px 2px #000000;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.search-bar {
+    display: flex;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ccc;
+}
+
+.book-code {
+    font-size: 16px;
+    color: #ccc; /* Adjust color to make it visible */
+    margin-bottom: 5px; /* Adds spacing around the code */
+}
+
+#searchBTN {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #212A3E;
+    color: white;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
+#searchBTN:hover {
+    background-color: #333;
+}
+
+/* Book Card Styling */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-info {
+    width: 150px;
+    height: auto; /* Adjust height to accommodate content */
+    background-color: #212A3E;
+    color: #FFFFFF;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.book-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.edit-bookBTN,
+.remove-bookBTN {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.edit-bookBTN {
+    background-color: lightblue;
+}
+
+.edit-bookBTN:hover {
+    background-color: deepskyblue; /* Darker blue on hover */
+}
+
+.remove-bookBTN {
+    background-color: lightcoral;
+}
+
+.remove-bookBTN:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Add Book Button Styling */
+.add-book-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+.content-addBTN {
+    width: 150px;
+    height: 60px;
+    background-color: #F1F6F9;
+    color: #212A3E;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content-addBTN:hover {
+    background-color: #212A3E;
+    color: #FFFFFF;
+}
+
+/* Popup Styling */
+.book-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.book-popup form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #212A3E;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+}
+
+#codeInput, #titleInput, #authorInput, #locationInput, #categoryInput, #book-submitBTN {
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Additional Styles for Enhancements */
+.book-info p {
+    margin: 5px 0; /* Space between paragraphs */
+}
+
+.book-code {
+    font-weight: bold; /* Highlight the book code */
+    color: #17a2b8; /* Teal color for book code */
+}
+
+
+
+

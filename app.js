@@ -146,10 +146,7 @@ function removeBook(index) {
     displayBooks();
 }
 
-window.onload = function() {
-    myLibrary = loadFromLocalStorage();
-    displayBooks(); // Display the books loaded from local storage
-};
+
 
 
 function saveToLocalStorage(books) {

@@ -3,8 +3,26 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #F1F6F9;
+    background-image: url('assets/316935966_634602891793944_2188104556703318504_n-removebg-preview.png'); /* Replace with the path to your image */
+   /* background-size: cover; /* Makes the image cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
     margin: 0;
 }
+
+.book-category {
+    color: #ffffff; /* Change this color to whatever you'd like */
+    font-weight: bold; /* Optional: Makes the text bold */
+}
+
+
+.book-category {
+    color: #ffffff; /* Change this color to your desired value */
+    font-size: 24px; /* Adjust font size if needed */
+    margin-top: 20px; /* Add margin for spacing */
+}
+
 
 .library-container {
     display: flex;
@@ -39,8 +57,8 @@ body {
 
 .book-code {
     font-size: 16px;
-    color: #ccc; /* Adjust color to make it visible */
-    margin-bottom: 5px; /* Adds spacing around the code */
+    color: #ccc;
+    margin-bottom: 5px;
 }
 
 #searchBTN {
@@ -67,7 +85,6 @@ body {
 
 .book-info {
     width: 150px;
-    height: auto; /* Adjust height to accommodate content */
     background-color: #212A3E;
     color: #FFFFFF;
     border-radius: 8px;
@@ -79,12 +96,20 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Handling long text in book cards */
+.book-title, .book-author, .book-location, .book-category {
+    font-size: 14px;       /* Adjust font size if necessary */
+    overflow: hidden;      /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
+    white-space: nowrap;   /* Prevents text from wrapping to the next line */
+}
+
 .book-title {
-    font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
 }
 
+/* Edit and Remove Buttons */
 .edit-bookBTN,
 .remove-bookBTN {
     padding: 5px;
@@ -100,7 +125,7 @@ body {
 }
 
 .edit-bookBTN:hover {
-    background-color: deepskyblue; /* Darker blue on hover */
+    background-color: deepskyblue;
 }
 
 .remove-bookBTN {
@@ -108,7 +133,7 @@ body {
 }
 
 .remove-bookBTN:hover {
-    background-color: #c82333; /* Darker red on hover */
+    background-color: #c82333;
 }
 
 /* Add Book Button Styling */
@@ -170,13 +195,14 @@ body {
 
 /* Additional Styles for Enhancements */
 .book-info p {
-    margin: 5px 0; /* Space between paragraphs */
+    margin: 5px 0;
 }
 
 .book-code {
-    font-weight: bold; /* Highlight the book code */
-    color: #17a2b8; /* Teal color for book code */
+    font-weight: bold;
+    color: #17a2b8;
 }
+
 
 
 

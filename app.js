@@ -146,20 +146,15 @@ function removeBook(index) {
     displayBooks();
 }
 
-
-
-
-function saveToLocalStorage(books) {
-    localStorage.setItem("myLibrary", JSON.stringify(books));
+function saveBooksToLocalStorage() {
+    localStorage.setItem("myLibrary", JSON.stringify(myLibrary));
 }
 
-function loadFromLocalStorage() {
-    const books = localStorage.getItem("myLibrary");
-    return books ? JSON.parse(books) : [];
-}
-
-
-
+function loadBooksFromLocalStorage() {
+    const storedBooks = localStorage.getItem("myLibrary");
+    if (storedBooks) {
+        myLibrary = JSON.parse(storedBooks);
+    }
     displayBooks();
 }
 
